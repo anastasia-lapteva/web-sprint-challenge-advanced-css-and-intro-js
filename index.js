@@ -259,10 +259,10 @@ function get20s(array)
     const convertToNumberBirth = parseInt(array[index].years.split(" ")[0]);
     const convertToNumberDeath = parseInt(array[index].years.split(" ")[2]);
 
-    if (convertToNumberBirth > 1900 && convertToNumberDeath < 2000)
+    if (convertToNumberBirth >= 1900 && convertToNumberDeath <= 2000)
     {
       newArray.push(array[index].name);
-    };
+    }
   }
   return newArray;
 }
@@ -290,8 +290,8 @@ function removeArtist(array, index)
   return array.length;
 }
 
-const removedArtist = removeArtist(artists, 0);
-console.log("task 5:", removedArtist);
+const arrayLength = removeArtist(artists, 0);
+console.log("task 5:", arrayLength);
 
 // Another way to write the console.log
 // console.log("task 5:", removeArtist(artists, 0));
