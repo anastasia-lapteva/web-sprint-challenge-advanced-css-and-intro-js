@@ -23,10 +23,34 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe accessibility on the web to someone new to programming?
+
+Accessibility is the practice of making your websites usable by as many people as possible. This includes: people with visual impairments using a screen reader, people with hearing impairments using text alternatives, people with mobility impairments using keyboard accessibility over a mouse, people using mobile devices, people with slow network connections, etc.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+3 different things you can do to ensure website accessibility are: (1) use semantic HTML, (2) include proper alt text for images, and (3) give links unique and descriptive names.
+
+(1) Utilizing semantic HTML helps screen reader users to navigate content.
+
+(2) Utilizing alt text for images allows screen reader users to understand the message conveyed by the use of images on the page. An exception to this rule is when an image is used purely for decoration. In this scenario alt text can be left empty so that the screen reader user is not distracted from important content on the page.
+
+(3) Utilizing unique and descriptive names for links allows screen reader users to scan for links. According to a google search, screen reader users often do not read the link within the context of the rest of the page. Using descriptive text properly explains the context of links to the screen reader user. For example, instead of saying "<Click here> to read about our company" you could say "To learn more about our company, read <About Us>" In this example I'm putting the links in angle brackets.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+I would explain that variables are containers that hold information. Their purpose is to label and store data that will be referenced and manipulated by a computer program. Much like "x" is a variable in math, "x" can be used as a variable in programming. What's even more helpful is that the programmer can use a descriptive name as a variable, so the program can be understood more clearly. For example, instead of using "x" as a variable, the programmer can use "firstName" as a variable. "firstName" is a placeholder that has a descriptive name, making it easy to understand that first names should be plugged into this variable.
+
 4. What is the purpose of using functions in code?
+
+Functions are a good alternative to having repeating blocks of code in a program. It is a portion of code that can be used over and over again. Values can be passed to a function using variables. Functions can also return values.
+
 5. How do you access a key inside of an object inside of an array?
+
+You can access a key inside of an object inside of an array using: (1) dot notation, or (2) bracket notation.
+
+(1) Dot notation: object.key; object.method();
+
+(2) Bracket notation: object['key'];
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -36,12 +60,12 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-1. Fork the repo
-2. Clone your forked version of the repo
-3. cd into your repo and create a branch with your first and last name
+[X] 1. Fork the repo
+[X] 2. Clone your forked version of the repo
+[X] 3. cd into your repo and create a branch with your first and last name
 NOTE: Tests will run for the JavaScript portion of this challenge only
-4. open the terminal in your vs code and type `npm install`
-5. next type `npm run test` in your terminal
+[X] 4. open the terminal in your vs code and type `npm install`
+[X] 5. next type `npm run test` in your terminal
 6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
 
 ### Testing & Debugging
