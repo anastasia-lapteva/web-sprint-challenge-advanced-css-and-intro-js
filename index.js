@@ -253,25 +253,23 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array)
 {
   const newArray = [];
+  // tell the loop where to start, let index = 0
+  // tell the loop how many times to run, index < array.length
+  // tell the loop what to increase by, index++
   for (let index = 0; index < array.length; index++)
   {
-    // const brokenDown = array[index].years.split(" ");
-    const convertToNumberBirth = parseInt(array[index].years.split(" ")[0]);
-    const convertToNumberDeath = parseInt(array[index].years.split(" ")[2]);
+    // Using split() to split a string into an array of substrings
+   // Using parseInt() to convert first index string (representing birth year) and last index string (representing death year) to numbers
+    const convertedToNumberBirth = parseInt(array[index].years.split(" ")[0]);
+    const convertedToNumberDeath = parseInt(array[index].years.split(" ")[2]);
 
-    if (convertToNumberBirth >= 1900 && convertToNumberDeath <= 2000)
+    if (convertedToNumberBirth >= 1900 && convertedToNumberDeath <= 2000)
     {
       newArray.push(array[index].name);
     }
   }
   return newArray;
 }
-
-// const brokenDown = artists[0].years.split(" ");
-// console.log("test:", brokenDown);
-
-// const convertToNumber = parseInt(artists[0].years.split(" ")[0]);
-// console.log("test 2:", convertToNumber)
 
 console.log("task 4:", get20s(artists));
 
@@ -286,7 +284,10 @@ For example, if removeArtist is invoked with the artists array and the number 0,
 
 function removeArtist(array, index)
 {
+  // splice() method changes the contents of an array by removing or replacing existing elements
+  // splice(start, deleteCount)
   array.splice(index, 1);
+  // returning the length of the remaining dataset after splicing out the indicated value
   return array.length;
 }
 
@@ -340,6 +341,9 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(array)
 {
   const newArray = [];
+  // tell the loop where to start, let index = 0
+  // tell the loop how many times to run, index < array.length
+  // tell the loop what to increase by, index++
   for (let index = 0; index < array.length; index++)
   {
     if (array[index].paintings > 100)
