@@ -48,9 +48,9 @@ Functions are a good alternative to having repeating blocks of code in a program
 
 You can access a key inside of an object inside of an array using: (1) dot notation, or (2) bracket notation.
 
-(1) Dot notation: object.key; object.method();
+(1) Dot notation: array[index].key; array[index].method();
 
-(2) Bracket notation: object['key'];
+(2) Bracket notation: array[index]['key']; array[index]['method()'];
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
